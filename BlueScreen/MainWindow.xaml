@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BlueScreen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="533" Width="535" ResizeMode="CanMinimize" SnapsToDevicePixels="True" SizeToContent="Height" Icon="/Icon/Bluescreen_Icon.ico">
+        Title="BlueScreen" Height="533" Width="535" ResizeMode="CanMinimize" SnapsToDevicePixels="True" SizeToContent="Height" Icon="/Icon/Bluescreen_Icon.ico">
     <Grid>
         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,60,0,0">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
@@ -14,11 +14,11 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,12,0,0">
                 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center">自定义进度</TextBlock>
-                <TextBox x:Name="prog" Margin="12,0,0,0" Width="408" Height="32" Text="2.5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" KeyUp="prog_KeyUp"/>
+                <TextBox x:Name="prog" Margin="12,0,0,0" Width="408" Height="32" Text="99" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" KeyUp="prog_KeyUp" UndoLimit="99"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,12,0,0">
                 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center">自定义二维码与链接</TextBlock>
-                <TextBox x:Name="qrcode" Margin="12,0,0,0" Width="360" Height="32" KeyDown="qrcode_KeyDown" KeyUp="qrcode_KeyUp" Text="https://github.com" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="qrcode" Margin="12,0,0,0" Width="360" Height="32" KeyDown="qrcode_KeyDown" KeyUp="qrcode_KeyUp" Text="https://github.com/Kfruit/BlueScreen" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             </StackPanel>
             <GroupBox Header="QR Review" BorderBrush="#FFABADB3" Height="256" Margin="0,12,0,0">
                 <Grid>
