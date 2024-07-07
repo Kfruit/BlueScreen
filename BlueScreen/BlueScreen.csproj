@@ -29,7 +29,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Icon\Bluescreen_Icon.ico" />
+    <Content Include="Icon\Bluescreen_Icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
